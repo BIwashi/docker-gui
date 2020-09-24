@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ubuntu:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: ubuntu_container
+    image: biwashi/ubuntu_gui
+    tty: true
+    # volumes:
+    #   - ./:/root/work/temp
+    # ports:
+    #   - "8080:8080"
